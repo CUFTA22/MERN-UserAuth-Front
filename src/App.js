@@ -24,13 +24,13 @@ function App() {
         token = "";
       }
       const tokenRes = await axios.post(
-        "https://todoapp-backend6.herokuapp.com/user/tokenIsValid",
+        "Your URL/user/tokenIsValid",
         null,
         { headers: { "x-auth-token": token } }
       );
       if (tokenRes.data) {
         const userRes = await axios.get(
-          "https://todoapp-backend6.herokuapp.com/user/",
+          "Your URL/user/",
           {
             headers: { "x-auth-token": token },
           }
