@@ -18,7 +18,7 @@ const LoginPage = () => {
     try {
       // Logs user in and gives us JWT
       const loginRes = await axios.post(
-        "Your URL",
+        "Your URL/user/login",
         {
           email,
           password,
