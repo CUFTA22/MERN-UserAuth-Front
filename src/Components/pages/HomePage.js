@@ -33,7 +33,7 @@ const HomePage = () => {
   useEffect(() => {
     const fetchTodos = async () => {
       const res = await axios.get(
-        "Your URL",
+        "Your URL/todo/all",
         {
           headers: { "x-auth-token": user.token },
         }
@@ -48,7 +48,7 @@ const HomePage = () => {
     try {
       axios
         .post(
-          "Your URL",
+          "Your URL/todo/new",
           {
             title: input,
             userId: user.user.id,
