@@ -21,11 +21,11 @@ const RegisterPage = () => {
     try {
       const newUser = { email, password, passwordCheck, displayName };
       await axios.post(
-        "Your URL/register",
+        "Your URL/user/register",
         newUser
       );
       await axios
-        .post("Your URL/login", {
+        .post("Your URL/user/login", {
           email,
           password,
         })
