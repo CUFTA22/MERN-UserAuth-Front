@@ -21,11 +21,11 @@ const RegisterPage = () => {
     try {
       const newUser = { email, password, passwordCheck, displayName };
       await axios.post(
-        "https://todoapp-backend6.herokuapp.com/user/register",
+        "Your URL/register",
         newUser
       );
       await axios
-        .post("https://todoapp-backend6.herokuapp.com/user/login", {
+        .post("Your URL/login", {
           email,
           password,
         })
