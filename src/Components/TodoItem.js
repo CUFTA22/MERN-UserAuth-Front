@@ -12,7 +12,7 @@ const TodoItem = ({ title, todoId, completed }) => {
   const handleDelete = async () => {
     let token = user.token;
     const deletedTodo = await axios.post(
-      "https://todoapp-backend6.herokuapp.com/todo/delete",
+      "Your URL/todo/delete",
       null,
       {
         params: { id: todoId },
@@ -25,7 +25,7 @@ const TodoItem = ({ title, todoId, completed }) => {
   const handleUpdate = async () => {
     let token = user.token;
     await axios.post(
-      "https://todoapp-backend6.herokuapp.com/todo/update",
+      "Your URL/todo/update",
       null,
       {
         params: { id: todoId },
