@@ -33,7 +33,7 @@ const HomePage = () => {
   useEffect(() => {
     const fetchTodos = async () => {
       const res = await axios.get(
-        "https://todoapp-backend6.herokuapp.com/todo/all",
+        "Your URL",
         {
           headers: { "x-auth-token": user.token },
         }
@@ -48,7 +48,7 @@ const HomePage = () => {
     try {
       axios
         .post(
-          "https://todoapp-backend6.herokuapp.com/todo/new",
+          "Your URL",
           {
             title: input,
             userId: user.user.id,
